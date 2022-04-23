@@ -18,7 +18,7 @@ public class Main {
         Matcher match = pattern.matcher(ip); //хранение результата
 
         if (match.find()){
-            System.out.println("Valid IP address: " + match.group());
+            System.out.println("Valid IP address: " + match.group()); //возвращение подстроки, которая совпала с выражением 
         }
         else{
             System.out.println("No valid IP address found.");
