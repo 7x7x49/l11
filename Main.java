@@ -14,7 +14,7 @@ public class Main {
         System.out.println("This program will help Уou find a valid IP address. Enter something:");
         String ip = in.nextLine();  //cчитывание целого введенного пользователем слова или фразы с консоли
 
-        Pattern pattern = Pattern.compile("(((25[0-5]\\.)|(2[0-4]\\d\\.)|(1[0-9]{2}\\.)|([1-9][0-9]\\.)|([0-9]\\.)){3})((25[0-5])|(2[0-4]\\d)|(1[0-9]{2})|([1-9][0-9])|([0-9]))");
+        Pattern pattern = Pattern.compile("(((25[0-5]\\.)|(2[0-4]\\d\\.)|(1\\d{2}\\.)|([1-9]\\d\\.)|(\\d\\.)){3})((25[0-5])|(2[0-4]\\d)|(1[0-9]{2})|([1-9]\\d)|(\\d))");
         Matcher match = pattern.matcher(ip); //хранение результата
 
         if (match.find()){
